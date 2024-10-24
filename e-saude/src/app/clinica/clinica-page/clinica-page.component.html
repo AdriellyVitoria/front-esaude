@@ -1,0 +1,46 @@
+<header class="cabecalho">
+  <div class="menu-pesquisa">
+    <img src="logo-cabecalho.png" alt="Logo da clinica">
+
+    <mat-form-field appearance="outline">
+      <mat-label class="input-pesquisar">Pesquisa</mat-label>
+      <input matInput placeholder="Digite para pesquisar"/>
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  <div class="divisao-menu">
+    <button
+      class="botao"
+      [ngClass]="{'botao-ativo': rotaSelecionada() == 'home'}"
+    >
+      <img src="casa.png" alt="" class="icones-menu">
+    </button>
+
+    <button
+      routerLink="/clinica/cadastro"
+      class="botao"
+      [ngClass]="{'botao-ativo': rotaSelecionada() == 'clinica/cadastro'}"
+      >
+      <img src="add-pessoas.png" alt="" class="icones-menu">
+    </button>
+
+    <button
+      routerLink="/clinica/agendamento"
+      class="botao"
+      [ngClass]="{'botao-ativo': rotaSelecionada() == 'clinica/agendamento'}"
+    >
+      <img src="agendar.png" alt="" class="icones-menu">
+    </button>
+  </div>
+
+  <div class="divisao-menu-dois">
+    <button
+      class="botao-sair"
+      [ngClass]="{'botao-ativo': rotaSelecionada() == 'login-paciente/'}"
+    >
+    SAIR
+    </button>
+  </div>
+</header>
+<router-outlet />

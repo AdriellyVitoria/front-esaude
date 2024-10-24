@@ -1,0 +1,75 @@
+.container {
+  background-image: url('/public/foto-fundo.png');
+  max-width: 1212px;
+  max-height: 774;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-formulario {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+}
+
+.titulo{
+  font-size: 32px;
+}
+
+.sub-titulo {
+  font-size: 24px;
+}
+
+.formulario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-dados-pessoais {
+  color: #000000; /* Cor preta */
+}
+
+.calendario {
+  width: 500px;
+  align-items: center;
+}
+
+.consulta {
+  display: flex;
+  align-items: center;
+  gap: 300px;
+}
+
+.dados-horarios {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.voltar{
+  border: none;
+  color: var(--Verde-claro);
+  background-color: var(--branco);
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.agendar {
+  border: none;
+  background-color: var(--Verde-claro);
+  width: 111px;
+  height: 50;
+  color: var(--branco);
+  font-size: 24px;
+  border-radius: 50px;
+  padding: 8px;
+}

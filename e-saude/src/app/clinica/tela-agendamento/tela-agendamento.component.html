@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="input-formulario">
+    <div class="formulario-agendamento">
+      <h1 class="titulo">Agendamento de Consulta</h1>
+      <h2 class="sub-titulo">Informações Pessoais</h2>
+
+      <div class="dados-pessoais">
+        <form class="formulario">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label class="input-dados-pessoais">Nome *</mat-label>
+            <input matInput placeholder="Amanda" type="texto">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label class="input-dados-pessoais">CPF *</mat-label>
+            <input matInput placeholder="123.123.123-12" >
+          </mat-form-field>
+        </form>
+      </div>
+
+      <div class="consulta">
+        <div class="agenda-consulta">
+          <h2 class="sub-titulo">Informações da Consulta</h2>
+          <div class="dados-medico">
+            <form class="formulario">
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label class="input-dados-pessoais">Especialidade *</mat-label>
+                <input matInput placeholder="Médico Clínico Geral" type="texto">
+              </mat-form-field>
+              <mat-form-field class="example-full-width" appearance="outline">
+                <mat-label class="input-dados-pessoais">Médico(a) *</mat-label>
+                <input matInput placeholder="Dr.João Alves" >
+              </mat-form-field>
+            </form>
+          </div>
+
+          <div class="dados-horarios">
+            <mat-form-field   appearance="outline">
+              <mat-label class="input-dados-pessoais">Data</mat-label>
+              <input matInput placeholder="DD/MM/AA">
+              <mat-datepicker-toggle matIconSuffix></mat-datepicker-toggle>
+            </mat-form-field>
+
+             <mat-form-field   appearance="outline">
+              <mat-label class="input-dados-pessoais" placeholder="00:00">Horário</mat-label>
+              <input matInput>
+            </mat-form-field>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calendario">
+      <mat-card class="demo-inline-calendar-card">
+        <mat-calendar></mat-calendar>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button mat-stroked-button color="primary" class="voltar">Voltar</button>
+    <button mat-raised-button color="primary" class="agendar">Agendar</button>
+  </div>
+</div>
+

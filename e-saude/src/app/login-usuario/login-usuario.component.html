@@ -1,0 +1,35 @@
+<div class="login-container">
+  <div class="imagem-logo">
+    <img src="/logo.png" alt="logo" class="logo">
+    <h3>Entrar</h3>
+  </div>
+  <form [formGroup]="loginForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email">
+      <mat-error>O email é obrigatório</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Senha</mat-label>
+      <input matInput [type]="ocultarSenha() ? 'password' : 'text'" formControlName="password">
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="mudarOcultarSenha($event)"
+      >
+        <mat-icon>{{ocultarSenha() ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+      <mat-error>A senha é obrigatória</mat-error>
+    </mat-form-field>
+    <button
+      mat-flat-button
+      class="login__button"
+      [disabled]="!loginForm.valid"
+      (click)="fazerLogin()"
+    >Continuar</button>
+  </form>
+  <div class="acoes">
+    <p class="esqueci__senha" routerLink="/login-paciente/recuperar-senha">Esqueci minha senha</p>
+  </div>
+</div>

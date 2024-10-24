@@ -1,0 +1,83 @@
+.login-container {
+  background-image: url(../../../public/login.png);
+}
+
+/* Contêiner para centralizar verticalmente e alinhar à esquerda */
+.login-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os elementos à esquerda */
+  justify-content: center; /* Centraliza verticalmente */
+  position: absolute;
+  left: 18%; /* Ajusta a distância da esquerda conforme necessário */
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 40px;
+  width: 350px; /* Ajuste conforme necessário */
+}
+
+/* Centraliza a logo e o título dentro do contêiner */
+.logo {
+  width: 100px; /* Ajuste conforme necessário */
+  margin-bottom: 34px; /* Espaçamento entre logo e título */
+}
+
+.imagem-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: var(--Verde-escuro);
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form .login__button {
+  height: 56px;
+  color: #fff;
+  background-color: var(--Verde-escuro);
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 12px;
+}
+
+.acoes {
+  color: #fff;
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  justify-content: center;
+  width: 100%;
+}
+
+.acoes p {
+  margin: 0;
+}
+
+.acoes p span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.acoes .esqueci__senha {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--Verde-escuro);
+
+}

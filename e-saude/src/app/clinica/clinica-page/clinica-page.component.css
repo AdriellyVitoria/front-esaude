@@ -1,0 +1,58 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px;
+  background-color: #fff;
+  height: 80px;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao {
+  background: none;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: all ease 0.2s;
+}
+
+.botao:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-ativo {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.menu-pesquisa {
+  gap: 16px;
+  align-items: flex-start;
+  padding-left: 32px;
+}
+
+.divisao-menu {
+  gap: 60px;
+}
+
+.divisao-menu-dois {
+  gap: 24px;
+}
+
+router-outlet {
+  background-color: var(--cinza);
+}
+
+.botao-sair {
+  color: var(--verde-escuro);
+}
